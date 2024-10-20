@@ -4,29 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel ="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="weather-app">
       <header>
         <form>
-          <input type="search" placeholder="Enter a city..." />
-          <input type="submit" value="Searh" />
+          <input type="search" placeholder="Enter a city..." class="search-input" />
+          <input type="submit" value="Searсh" class="search-button" />
         </form>
       </header>
       <main>
-        <div>
+        <div class="weather-details">
             <div>
         <h1>Paris</h1>
-        <p>Saturday 20:53, modarate rain </br>Humidity: 87%, Wind: 7.2km/h</p>
+        <p>Saturday 20:53, moderate rain </br>Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong></p>
             </div>
     <div class = "current-temperature">
         
-         ☀️24℃
+         <span class="current-temperature-icon">☀️</span><span class="current-temperature-value">24</span><span class="current-temperature-unit">℃</span>
     </div>
         </div>
       </main>
       <footer>
-        This project was coded by
+        <p>This project was coded by
         <a target="_blank" href="https://github.com/YuliaST1"
           >Yuliia Striukova</a
         >
@@ -35,6 +39,7 @@
           >GitHub</a
         >
         and hosted on <a target="_blank" href="">Netlify</a>
+    </p>
       </footer>
     </div>
   </body>
